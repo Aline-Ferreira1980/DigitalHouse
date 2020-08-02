@@ -1,0 +1,39 @@
+div,p{
+    background-color: green;
+}
+.fundoamarelo{
+    background-color: yellow;
+}
+#null{
+    background-color: white;
+}
+
+div.fundovermelho{
+    background-color: red;
+}
+.classe1 {
+    background: blue;
+    width: 800px;
+    height: 800px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+}
+
+.classe2{
+    background: green;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    z-index: 0; /*-1 causa sobreposição*/
+}
+.classe3{
+    background: yellow;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}

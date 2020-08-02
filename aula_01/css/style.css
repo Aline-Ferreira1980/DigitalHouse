@@ -1,0 +1,78 @@
+/*body{
+    background-color: #945407;
+    color: whitesmoke;
+    font-family: sans-serif;
+    text-align: center;
+}*/
+
+strong{
+    background-color: rgba(25, 61, 49,0.5);
+    font-family: cursive;
+
+}
+mark{
+    color: lightsalmon;
+}
+em{
+    font-weight: bolder;
+    color: maroon;
+}
+.dadosPessoais{
+    font-style: oblique;
+    background-color: rgba(25, 61, 49,0.25);
+}
+
+.navegador{
+    text-align:right;
+
+}
+
+
+body {
+    font-family: sans-serif;
+    text-align: justify;
+    background-color: rgb(187, 178, 243);
+    font-family: sans-serif;
+    background-image: url(/funky-lines/funky-lines.png);
+    position: absolute;
+    top: 0px;
+    width: 960px;
+    border-style: dotted;
+    margin: 20px;
+    left: 0px; 
+}
+h1{
+    color: rgba(29, 114, 104, 0.76);
+    text-align: center;
+    font-style: italic;
+}
+h3{
+    text-decoration: underline;
+}
+h4{
+    counter-reset: blue;
+    text-decoration: underline;
+}
+p {
+
+    text-align: justify;
+    font-size: 14px;
+    line-height: 30px;
+}
+.destaque{
+    font-size: 22px;
+    background-color:#dfcece;
+}
+
+img{
+    text-align: justify;
+}
+
+.footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    text-align: center;
+    clear: both;
+}
