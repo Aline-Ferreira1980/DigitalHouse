@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<style>
+    #animationWindow {
+    z-index: 9999 !important;
+    width: 100%;
+    height: 100%;      position: absolute;
+    width: 100%;
+    background: white;
+    height: 100%;
+    margin: 0% !important;
+    padding: 0% !important;
+  }    #animationWindow img {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0px 0px -50px;
+  }    .nomargin-nopadding {
+    margin: 0% !important;
+    padding: 0% !important;
+    margin: 0% !important;
+    padding: 0% !important;
+  }    .hidden {
+    display: none;
+  }
+</style>
+<title>Playground Digital House</title>
+<meta name="description" content="Playground" />
+<base href="/">
+<link rel="shortcut icon" href="/br/favicon.ico"></head>
+<body class="nomargin-nopadding">
+<div id="animationWindow">
+<img src="./imgs/preloader.gif" />
+</div>
+<div id="root"></div>
+<script src="./app.js?v1.1.0"></script>
+<script type="text/javascript" src="/br/vendors.6e7657c3e7160c816b79.js"></script><script type="text/javascript" src="/br/main.a352117cb12df5b123df.js"></script></body>
+</html>

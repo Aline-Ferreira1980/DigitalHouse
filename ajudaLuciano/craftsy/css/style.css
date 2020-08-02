@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+main, 
+header,
+.images,
+nav,
+footer{
+    margin: auto;
+}
+
+main{
+    width: 1200px;
+    height: 1000px;
+    background-color: rgb(57, 217, 245);
+}
+header, 
+.images,
+nav, 
+footer{
+    width: 960px;
+}
+header ,
+footer{
+    position: relative;
+    height: 50px;
+    top: 100px;
+    background-color: orangered;
+    
+}
+.logo{
+    position: absolute;
+    left: -80px;
+    top: -20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.main-menu{
+    margin-left: 50px;
+}
+.main-menu ul{
+    list-style: none;
+    
+}
+.main-menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 10%;
+}
+.main-menu ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-menu ul li a:link,
+.main-menu ul li a:visited{
+    color: white;
+}
+
+.images{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    top: 150px;
+    background-color: white;
+}
+.products{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    margin: 10px;
+}
+#image1{
+    
+    background-image: url(/craftsy/imagens/Asus.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#image2{
+    
+    background-image: url(/craftsy/imagens/galaxyA50.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#image3{
+    
+    background-image: url(/craftsy/imagens/galaxyJ4.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#image4{
+    
+    background-image: url(/craftsy/imagens/lgG4.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#image5{
+    
+    background-image: url(/craftsy/imagens/motorolaArchive.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#image6{
+    
+    background-image: url(/craftsy/imagens/multilazer.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#image7{
+    
+    background-image: url(/craftsy/imagens/Sony.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#image8{
+    
+    background-image: url(/craftsy/imagens/sonyXperia.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#image9{
+    
+    background-image: url(/craftsy/imagens/samsungJ8.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+span{
+    position:absolute;
+    top: 50%;
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.5);
+}
+.products img{
+    position: absolute;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.products button{
+    position: absolute;
+    top:80%;
+    width: 100px;
+    margin-left: 100px;
+    display: inline-block;
+    background-color: orangered;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+   
+}
+
+footer{
+    margin-top:80px;
+    text-align: center;
+    color: white;
+    line-height: 300%;
+}
