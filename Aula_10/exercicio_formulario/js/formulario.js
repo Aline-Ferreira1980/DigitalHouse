@@ -98,9 +98,8 @@
            })
        }
        function buscarFormulario(){
-        $(".barra-progresso").show();
         var table = document.getElementById("table").value;
-        var url = "https://viacep.com.br/ws/"+ cep + "/json/";
+        var url = "https://localhost:3000/users";
         console.log(url)
         $.ajax({
             url:url,
