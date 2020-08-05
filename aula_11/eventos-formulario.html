@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/jogo_da_velha/jquery-2.2.1.js"></script>
+    <title>Document</title>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+        $(".campo1").blur(function(){
+            alert("Elemento perdeu o foco   ")
+        });
+        
+        $(".campo2").change(function(){
+            alert("Elemento foi trocado")
+        });
+        
+    });
+
+    
+
+    </script>
+</head>
+<body>
+    <input class="campo1" type="text">
+
+    <!--
+        focus 
+        blur
+        change
+    -->
+
+    <select class="campo2">
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+    </select>
+</body>
+</html>
+
+<!-- 
+	keydown
+	keypress
+	keyup 
+	-->
