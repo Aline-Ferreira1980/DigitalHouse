@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Andrew",
+      "location": "USA"
+    },
+    {
+      "id": 2,
+      "name": "Julio",
+      "location": "Canadá"
+    },
+    {
+      "id": "3",
+      "name": "Rafael",
+      "location": "Brasil"
+    },
+    {
+      "id": "12",
+      "name": "Aline",
+      "location": "AJfeoijfe"
+    },
+    {
+      "id": "52",
+      "name": "Deurs",
+      "location": "alkfeuij"
+    },
+    {
+      "id": "25",
+      "name": "djhfhsdh",
+      "location": "dkfidj"
+    },
+    {
+      "id": "8",
+      "name": "rodrigo",
+      "location": "al=em====="
+    }
+  ]
+}

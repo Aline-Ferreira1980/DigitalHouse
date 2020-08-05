@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script type="text/javascript">
+        function envio(){
+            var id = document.getElementById('id').value;
+            var name = document.getElementById('name').value;
+            var location = document.getElementById('location').value;
+            $.ajax({
+                method: "POST",
+                url: "http://localhost:3000/users",
+                data: { 
+                    "id": id,
+                    "name": name,
+                    "location": location
+                    }
+            })
+        }   
+        function buscar (){
+            $.get("http://localhost:3000/users/1", function( data ) {
+                document.getElementById('id').value = data.id; 
+                document.getElementById('name').value = data.name;
+                document.getElementById('location').value = data.location;
+        });
+        }
+
+    </script>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="id">
+        <input type="text" value="" id="name">
+        <input type="text" value="" id="location">
+        <button onclick="envio()">Enviar</button>
+    </form>
+    <button onclick="buscar()">Buscar</button>
+</body>
+</html>
