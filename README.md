@@ -9,6 +9,7 @@ Full Stack Java.
 * Aula 07 - Bootstrap;
 * Aula 08 - Git e JavaScript;
 * Aula 09 - DOM e eventos;
+* Aula 10 - Ajax e JQuery
 
 
 # DigitalHouse
