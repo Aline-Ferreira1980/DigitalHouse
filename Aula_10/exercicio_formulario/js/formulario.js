@@ -1,21 +1,9 @@
-
-
-    //   function obrigatorio(){
-    //     if ("#name" === "") {
-    //         document.getElementById("obrigatorio").innerHTML = name.value;
-    //         alert('Preencha o campo com seu Name');
-    //         return false;
-    //         }
-    //   }
-
     function buscar(email){
       var email =  document.getElementById('email').value;
 
     }
         
-       function validar(){
-          
-           
+       function validar(){ 
            var name = formulario.name.value;
            var lastName = formulario.lastName.value;
            var password = formulario.password.value;
@@ -27,22 +15,22 @@
            
            if (name === ""){
                alert("Campo NAME não preenchido!");
-               form1.name.focus();
+               formulario.name.focus();
                return false;
            }
            if (lastName === ""){
             alert("Campo LAST NAME não preenchido!");
-            form1.lastName.focus();
+            formulario.lastName.focus();
             return false;
         }
         if (password === ""){
             alert("Campo PASSWORD não preenchido!");
-            form1.password.focus();
+            formulario.password.focus();
             return false;
         }
         if (repassword === ""){
             alert("Campo REPASSWORD não preenchido!");
-            form1.repassword.focus();
+            formulario.repassword.focus();
             return false;
            
         }
@@ -52,22 +40,22 @@
         }
         if (email === ""){
             alert("Campo EMAIL não preenchido!");
-            form1.email.focus();
+            formulario.email.focus();
             return false;
         }
         if (address === ""){
             alert("Campo ADDRESS não preenchido!");
-            form1.address.focus();
+            formulario.address.focus();
             return false;
         }
         if (city === ""){
             alert("Campo CITY não preenchido!");
-            form1.city.focus();
+            formulario.city.focus();
             return false;
         }
         if (state === ""){
             alert("Campo STATE não preenchido!");
-            form1.state.focus();
+            formulario.state.focus();
             return false;
         }
         
@@ -96,10 +84,10 @@
            var url= "http://localhost:3000/users";
             alert("Form was submited!")
            $.ajax({
-               type:"POST",
+               method:"GET",
                url:url,
                data:{
-                   "name": name,
+                   "name": " ",
                    "lastName": lastName,
                    "email": email,
                    "address": address,
@@ -109,3 +97,24 @@
                }
            })
        }
+       function buscarFormulario(){
+        $(".barra-progresso").show();
+        var table = document.getElementById("table").value;
+        var url = "https://viacep.com.br/ws/"+ cep + "/json/";
+        console.log(url)
+        $.ajax({
+            url:url,
+            type: "GET",
+            success: function(response){
+                console.log(response);
+                $("#name").html(response.name);
+                $("#lastName").html(response.lastName);
+                $("#email").html(response.email);
+                $("#address").html(response.address);
+                $("#city").html(response.city);
+                $("#state").html(response.state);
+                $("#gender").html(response.gender);
+                
+            }
+        })
+    }

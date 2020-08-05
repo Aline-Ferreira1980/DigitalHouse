@@ -1,5 +1,13 @@
 {
     "users":[
-        
+        {
+            "name": " ",
+            "lastName": " ",
+            "email": " ",
+            "address": " ",
+            "city": " ",
+            "state": " ",
+            "gender": " "
+        }
     ]
 }
