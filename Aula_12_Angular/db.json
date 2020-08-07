@@ -1,0 +1,34 @@
+{
+  "agenda": [
+    {
+      "id": 1,
+      "nome": "Lucya",
+      "telefone": "(73) 4495-85545"
+    },
+    {
+      "id": 2,
+      "nome": "Robert",
+      "telefone": "(73) 4495-6060"
+    },
+    {
+      "id": 3,
+      "nome": "Roger",
+      "telefone": "(73) 4495-8554"
+    },
+    {
+      "id": 4,
+      "nome": "Rafael",
+      "telefone": "73 88963241"
+    },
+    {
+      "id": 5,
+      "nome": "Thiago",
+      "telefone": "73 46546467"
+    },
+    {
+      "id": 6,
+      "nome": "Aline",
+      "telefone": "11 33226655"
+    }
+  ]
+}
