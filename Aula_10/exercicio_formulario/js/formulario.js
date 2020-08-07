@@ -1,7 +1,4 @@
-    function buscar(email){
-      var email =  document.getElementById('email').value;
 
-    }
         
        function validar(){ 
            var name = formulario.name.value;
@@ -13,8 +10,9 @@
            var city = formulario.city.value;
            var state = formulario.state.value;
            
+           
            if (name === ""){
-               alert("Campo NAME não preenchido!");
+               console.log("Campo NAME não preenchido!");
                formulario.name.focus();
                return false;
            }
@@ -58,42 +56,45 @@
             formulario.state.focus();
             return false;
         }
-        
+        function corGender(){
+            if(this.gender === "#feminino"){
+                 document.getElementById('cor').style='backgroundColor= red';
+            }
+            if (this.gender === '#masculino'){
+                document.getElementById('cor').style= 'backgroundColor = blue';
+            }
+            else{
+                document.getElementById('cor').style = 'backgound-color= rgba(40, 224, 30, 0.67)';
+            }
+        }
+ 
        }
 
-       function corGender(){
-           if(gender === "#feminino"){
-                document.getElementById('cor').style='backgroundColor= red';
-           }
-           if (gender === '#masculino'){
-               document.getElementById('cor').style= 'backgroundColor = blue';
-           }
-           else{
-               document.getElementById('cor').style = 'backgound-color= rgba(40, 224, 30, 0.67)';
-           }
-       }
-
-       function register(){
-           var name = document.getElementById('name').value;
-           var lastName = document.getElementById('lastName').value;
-           var email = document.getElementById('email').value;
-           var address = document.getElementById('address').value;
-           var city = document.getElementById('city').value;
-           var state = document.getElementById('state').value;
-           var gender = document.getElementById('gender').value;
-           var url= "http://localhost:3000/users";
+       
+       function register(id){
+        var url= "http://localhost:3000/users";
+           document.getElementById('name').value;
+           document.getElementById('lastName').value;
+           document.getElementById('email').value;
+           document.getElementById('address').value;
+           document.getElementById('city').value;
+           document.getElementById('state').value;
+           document.getElementById('gender').value;
+           
+           
             alert("Form was submited!")
+            
            $.ajax({
                method:"GET",
                url:url,
                data:{
                    "name": " ",
-                   "lastName": lastName,
-                   "email": email,
-                   "address": address,
-                   "city": city,
-                   "state": state,
-                   "gender": gender
+                   "lastName": " ",
+                   "email": " ",
+                   "address": " ",
+                   "city": " ",
+                   "state": " ",
+                   "gender": " "
                }
            })
        }
@@ -115,5 +116,5 @@
                 $("#gender").html(response.gender);
                 
             }
-        })
+        });
     }
