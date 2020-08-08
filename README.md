@@ -14,7 +14,7 @@ Full Stack Java.
 * Aula 12 - Angular;
 INSTALAÇÃO NECESSÁRIA PARA FUNCIONAMEMTO E CONFIGURAÇÃO DA AGENDA: 
 
- #####Comando                                 =>       Função
+ >>>Comando                                 =>       Função
 (npm install -g @angular/cli             =>       instalar angular)
 (ng new [nome do projeto]                =>       criando um novo projeto)
 (ng serve                                =>       iniciar o servidor (tem que estar na pasta))
