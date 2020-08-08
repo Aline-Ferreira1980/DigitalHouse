@@ -15,16 +15,16 @@ Full Stack Java.
 INSTALAÇÃO NECESSÁRIA PARA FUNCIONAMEMTO E CONFIGURAÇÃO DA AGENDA: 
 
  <h4>Comando                                 =>       Função</h4>
-1 - npm install -g @angular/cli             =>       instalar angular
-2 - ng new [nome do projeto]                =>       criando um novo projeto
-3 - ng serve                                =>       iniciar o servidor (tem que estar na pasta)
-4 - ng g c [nome componente] --skip-tests   =>       gerar novo componente sem arquivos de teste
-5 - ng g c [nome service] --skip-tests      =>       gerar novo service sem arquivos de teste
-6 - npm install primeng --save instalar     =>       biblioteca de componentes
-7 - npm install primeicons --save instalar  =>       biblioteca de ícones
-8 - npm install @angular/animations --save  =>       instalar animações
-9 - npm install @angular/cdk --save         =>       instalar pacotes de tabelas do angular
-10 - npm install primeflex --save            =>       instalar primeflex
+[npm install -g @angular/cli             =>       instalar angular]
+[ng new [nome do projeto]                =>       criando um novo projeto]
+[ng serve                                =>       iniciar o servidor (tem que estar na pasta)]
+[ng g c [nome componente] --skip-tests   =>       gerar novo componente sem arquivos de teste]
+[ng g c [nome service] --skip-tests      =>       gerar novo service sem arquivos de teste]
+[npm install primeng --save instalar     =>       biblioteca de componentes]
+[npm install primeicons --save instalar  =>       biblioteca de ícones]
+[npm install @angular/animations --save  =>       instalar animações]
+[npm install @angular/cdk --save         =>       instalar pacotes de tabelas do angular]
+[npm install primeflex --save            =>       instalar primeflex]
 
 
 
