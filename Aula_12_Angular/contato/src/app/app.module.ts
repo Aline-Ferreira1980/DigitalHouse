@@ -13,11 +13,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PainelAgendaComponent } from './painel-agenda/painel-agenda.component';
 import { from } from 'rxjs';
+import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
+import { ListarClienteComponent } from './listar-cliente/listar-cliente.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PainelAgendaComponent
+    PainelAgendaComponent,
+    CadastroClienteComponent,
+    ListarClienteComponent,
+    
   ],
   imports: [
     BrowserModule,

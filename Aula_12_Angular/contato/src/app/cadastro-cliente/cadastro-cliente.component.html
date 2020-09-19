@@ -1,0 +1,39 @@
+
+<div class="container">
+<form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputNome">Nome</label>
+        <input type="text" class="form-control" id="inputNome"[(ngModel)]="cliente.nome" name="nome">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputSobrenome">Sobrenome</label>
+        <input type="text" class="form-control" id="inputSobrenome" [(ngModel)]="cliente.sobrenome" name="sobrenome">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Email</label>
+      <input type="email" class="form-control" id="inputAddress" [(ngModel)]="cliente.email" name= "email">
+    </div>
+    <div class="form-group">
+        <label for="inputAddress">Telefone</label>
+        <input type="text" class="form-control" id="inputAddress" [(ngModel)]="cliente.telefone" name = "telefone">
+      </div>
+    <div class="form-group">
+      <label for="inputAddress2">CPF</label>
+      <input type="text" class="form-control" id="inputAddress2"  [(ngModel)]="cliente.cpf" name ="cpf">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">RG</label>
+        <input type="text" class="form-control" id="inputCity" [(ngModel)]="cliente.rg" name ="rg">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Data de Nascimento</label>
+        <input type="date" class="form-control" id="inputZip"[(ngModel)]="cliente.dataNasc" name ="dataNasc">
+      </div>
+    </div>
+    
+    <button type="submit" class="btn btn-primary" (click)="adicionar()">Cadastrar</button>
+  </form>
+</div>

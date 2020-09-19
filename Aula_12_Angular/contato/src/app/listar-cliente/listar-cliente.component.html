@@ -1,0 +1,17 @@
+<div>
+<table [value]="cliente.service" [paginator]="true" [rows]="1">
+
+  <ng-template Template="body" let-ag>
+    <tr>
+        <td>{{cliente.nome}}</td>
+        <td>{{cliente.sobrenome}}</td>
+        <td>{{cliente.cpf}}</td>
+        <td>{{cliente.rg}}</td>
+        <td>{{cliente.dataNasc}}</td>
+        <td>{{cliente.email}}</td>
+        <td>{{cliente.telefone}}</td>
+
+    </tr>
+</ng-template>
+</table>
+</div>
