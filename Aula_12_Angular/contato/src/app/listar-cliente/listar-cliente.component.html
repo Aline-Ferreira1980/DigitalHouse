@@ -1,17 +1,28 @@
-<div>
-<table [value]="cliente.service" [paginator]="true" [rows]="1">
-
-  <ng-template Template="body" let-ag>
-    <tr>
-        <td>{{cliente.nome}}</td>
-        <td>{{cliente.sobrenome}}</td>
-        <td>{{cliente.cpf}}</td>
-        <td>{{cliente.rg}}</td>
-        <td>{{cliente.dataNasc}}</td>
-        <td>{{cliente.email}}</td>
-        <td>{{cliente.telefone}}</td>
-
-    </tr>
-</ng-template>
-</table>
+<div class="container">
+<p-table [value]="cliente" [paginator]="true" [rows]="5">
+  <ng-template pTemplate="header">
+      <tr>
+        
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Data de Nascimento</th>
+          <th>CPF</th>
+          <th>RG</th>
+          <th>email</th>
+          <th>Telefone</th>
+          
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-cl>
+      <tr>
+        <td>{{cl.nome}}</td>
+        <td>{{cl.sobrenome}}</td>
+        <td>{{cl.cpf}}</td>
+        <td>{{cl.rg}}</td>
+        <td>{{cl.dataNasc}}</td>
+        <td>{{cl.email}}</td>
+        <td>{{cl.telefone}}</td>
+      </tr>
+  </ng-template>
+</p-table>
 </div>

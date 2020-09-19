@@ -1,6 +1,9 @@
 body{
     background-color: rgb(154, 154, 168);
 }
+.container{
+    text-align: left;
+}
 
 .container{
     background-color: rgb(234, 235, 243);

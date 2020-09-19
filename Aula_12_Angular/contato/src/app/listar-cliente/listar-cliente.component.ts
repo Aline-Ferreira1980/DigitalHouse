@@ -8,23 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarClienteComponent implements OnInit {
 
-  cliente= {id: '', nome: '',sobrenome: '', dataNasc: '', cpf: '', rg: '', email:'', telefone: '' };
-  clienteService: any;
-  ClienteService: any;
+  cl = {id: '', nome: '', sobrenome: '', dataNas: '', cpf: '', rg: '',
+  email: '' , telefone: ''};
+  cliente = [];
+  operacao = true;
+  
 
-  constructor(clienteService: ClienteService) { }
+  constructor(private ClienteService: ClienteService) { }
   ngOnInit() {
     this.consultar();
   }
   consultar() {
-    this.clienteService.listar().subscribe(resposta =>
+    this.ClienteService.listar().subscribe(resposta =>
       this.cliente = resposta as any);
-  }
-  
-  listar() {
-    this.ClienteService.atualizar(this.cliente).subscribe(() => {
-    this.cliente = {id: '', nome: '',sobrenome: '', dataNasc: '', cpf: '', rg: '', email:'', telefone: '' };
-    this.consultar();
-    });
   }
 }
