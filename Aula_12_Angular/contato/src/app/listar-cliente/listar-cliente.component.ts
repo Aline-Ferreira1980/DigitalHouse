@@ -12,7 +12,6 @@ export class ListarClienteComponent implements OnInit {
   email: '' , telefone: ''};
   cliente = [];
   operacao = true;
-  
 
   constructor(private ClienteService: ClienteService) { }
   ngOnInit() {
