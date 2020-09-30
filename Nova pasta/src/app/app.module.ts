@@ -1,52 +1,51 @@
 import { RouterModule, Routes } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Component } from '@angular/core';
-import{ FormsModule} from '@angular/forms';
-import {DropdownModule} from 'primeng/dropdown';
-
-
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TableModule } from 'primeng/table';
 import { PanelModule } from 'primeng/panel';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
-import {TableModule} from 'primeng/table';
+import { ToastModule } from 'primeng/toast';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DropdownModule} from 'primeng/dropdown';
+
 import { AppComponent } from './app.component';
 import { PainelAgendaComponent } from './painel-agenda/painel-agenda.component';
-import { from } from 'rxjs';
+import { TelaCarrosComponent } from './tela-carros/tela-carros.component';
 import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
-import { ListarClienteComponent } from './listar-cliente/listar-cliente.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
-
 const routes: Routes = [
-  {path: 'agenda', component: PainelAgendaComponent},
-  {path: 'cadastro', component: CadastroClienteComponent}
-]
-  @NgModule({
+  { path: 'agenda', component: PainelAgendaComponent },
+  { path: 'cliente', component: CadastroClienteComponent }, 
+];
+
+@NgModule({
   declarations: [
     AppComponent,
     PainelAgendaComponent,
+    TelaCarrosComponent,
     CadastroClienteComponent,
-    ListarClienteComponent,
-    NavBarComponent,
-    
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule,
     TableModule,
     PanelModule,
     InputTextModule,
-    ButtonModule, 
-    DropdownModule,
-    HttpClient,
-    RouterModule.forRoot(routes)
+    ButtonModule,
+    ToastModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes),
+    DropdownModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [RouterModule]
 })
 export class AppModule { }

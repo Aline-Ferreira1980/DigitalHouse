@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { ClienteService } from './../cliente.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -13,7 +14,7 @@ export class ListarClienteComponent implements OnInit {
   cliente = [];
   operacao = true;
 
-  constructor(private ClienteService: ClienteService) { }
+  constructor(private ClienteService: ClienteService, private router: Router) { }
   ngOnInit() {
     this.consultar();
   }
