@@ -1,6 +1,7 @@
 import { ClienteModel } from './../model/cliente-model';
 import { ClienteEntity } from './../entity/cliente-entity';
 import { Mapper } from './../../../app/base/mapper';
+
 export class ClienteMapper extends Mapper<ClienteEntity, ClienteModel> {
     mapFrom(entity: ClienteEntity): ClienteModel {
         return {
@@ -12,7 +13,8 @@ export class ClienteMapper extends Mapper<ClienteEntity, ClienteModel> {
             cpf: entity.cpf,
             rg: entity.rg,
             email: entity.email,
-            endereco: entity.endereco
+            endereco: entity.endereco,
+            foto: entity.foto
         };
     }
     mapTo(model: ClienteModel): ClienteEntity {
@@ -25,7 +27,8 @@ export class ClienteMapper extends Mapper<ClienteEntity, ClienteModel> {
             cpf: model.cpf,
             rg: model.rg,
             email: model.email,
-            endereco: model.endereco
+            endereco: model.endereco,
+            foto: model.foto
         };
     }
 }

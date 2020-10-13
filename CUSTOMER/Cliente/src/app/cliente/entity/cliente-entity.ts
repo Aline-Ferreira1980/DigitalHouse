@@ -8,6 +8,7 @@ export interface ClienteEntity {
     rg?: string;
     email?: string;
     endereco?: EnderecoEntity;
+    foto?: any;
 }
 export interface EnderecoEntity {
     cep?: string;

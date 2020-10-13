@@ -9,7 +9,8 @@ export class CidadeMapper extends Mapper<CidadeEntity, CidadeModel> {
     return {
       id: param.id,
       nome: param.nome,
-      estado: param.estado
+      estado: param.estado,
+     
     };
   }
 
@@ -17,7 +18,8 @@ export class CidadeMapper extends Mapper<CidadeEntity, CidadeModel> {
     return {
       id: param.id,
       nome: param.nome,
-      estado: param.estado
+      estado: param.estado,
+     
     };
   }
 }

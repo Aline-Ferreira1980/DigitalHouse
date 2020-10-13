@@ -1,20 +1,60 @@
 <div class="container mt-5">
+
+    <p-messages [(value)]="mensagem" 
+        [enableService]="false" 
+        [showTransitionOptions]="'1000ms'" 
+        [hideTransitionOptions]="'1000ms'">
+    </p-messages>
     <form [formGroup]="formulario" (ngSubmit)="cadastrar()">
         <div class="form-row">
-            <div class="form-group col-md-12">
+            <div class="form-group col-md-6">
                 <label for="nome">Nome</label>
                 <input id="nome" type="text" class="form-control" formControlName="nome" />
             </div>
-            <div class="form-group col-md-12">
+            <div class="form-group col-md-6">
                 <label for="sobrenome">Sobrenome</label>
-                <input type="text" class="form-control" id="sobrenome" formControlName="sobrenome" />
+                <input 
+                type="text" 
+                class="form-control" 
+                id="sobrenome" 
+                formControlName="sobrenome"
+                [class]="(submitted && formulario.get('sobrenome').errors) || 
+                         (formulario.get('sobrenome').errors && formulario.get('sobrenome').dirty) ? 'is-invalid' : 
+                         formulario.get('sobrenome').dirty ? 'is-valid' : '' "
+                />
+                <div *ngIf="formulario.get('sobrenome').errors?.required"
+                 class="invalid-feedback" >
+                    Sobrenome é obrigatório!
+                </div>
+                <div *ngIf="formulario.get('sobrenome').errors?.minlength"
+                class="invalid-feedback" >
+                    Sobrenome deve ter mais que 3 caracteres!
+                </div>
+                <div *ngIf="formulario.get('sobrenome').errors?.maxlength"
+                class="invalid-feedback" >
+                    Sobrenome excedeu a quantidade máxima de 10 caracteres!
+                </div>
             </div>
+            
+        </div>
+        <div class="form-group" >
+            <label for="nome">Foto</label>
+            <p-fileUpload #upload
+                name="demo[]" 
+                chooseLabel="Escolher uma foto" 
+                [showUploadButton]="false"
+                [showCancelButton]="false"
+                (onSelect)="enviarImagem($event)"
+                [multiple]="false" 
+                accept="image/*"
+                maxFileSize="1000000">               
+            </p-fileUpload>
         </div>
         <div class="form-group">
             <label for="telefone">Telefone</label>
-            <input type="text" class="form-control" id="telefone" placeholder="73 95321-9875"
-                formControlName="telefones">
-        </div>
+            <p-inputMask styleClass="form-control" id="telefone" placeholder="(73) 95321-9875"
+                formControlName="telefones" mask="(99) 99999-9999"></p-inputMask>
+        </div>        
         <div class="form-group">
             <label for="email">E-mail</label>
             <input type="email" class="form-control" id="email" formControlName="email" />
